@@ -1,7 +1,7 @@
 body {
     margin: 0;
     height: 100vh;
-    background: black;
+    background: #fff;
 }
 
 div {
@@ -10,5 +10,5 @@ div {
     align-items: center;
     width: 100%;
     height: calc(100vh / 7);
-    color: #fff;
+    color: #000;
 }
