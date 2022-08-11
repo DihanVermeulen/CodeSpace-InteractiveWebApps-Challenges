@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: black;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh / 7);
+    color: #fff;
+}
