@@ -1,4 +1,19 @@
 body {
+    justify-content: center;
+    align-items: center;
     margin: 0;
-    background: black;
+    background: #fff;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    scroll-snap-align: center;
+}
+
+nav {
+    position: fixed;
 }
