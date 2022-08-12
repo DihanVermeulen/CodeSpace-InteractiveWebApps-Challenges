@@ -15,7 +15,32 @@
 </head>
 
 <body>
-    <div class="card"></div>
+    <!-- Card to display form -->
+    <div class="card p-4">
+        <form action="/FrontendValidation1">
+            <div class="p-2">
+                <label for="taskItem">New task:</label>
+                <input type="text" class="form-control" data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-custom-class="custom-tooltip" data-bs-title="Required and must not contain any html characters"
+                    name="taskItem" id="taskInput" required>
+            </div>
+            <div class="p-2">
+                <label for="taskDescription">Task Description:</label>
+                <textarea type="text" class="form-control" name="taskDescription" id="taskDesc"></textarea>
+            </div>
+            <div class="p-2">
+                <label for="date">Date:</label>
+                <input type="date" id="dateInput" name="date">
+            </div>
+            <div class="p-2">
+                <label for="taskDue">Set task due time:</label>
+                <input type="time" id="timeInput" name="taskDue">
+            </div>
+            <div>
+                <button class="btn btn-primary">Add task</button>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
