@@ -1,10 +1,10 @@
 .card {
     display: flex;
     flex-direction: column;
-    width: 100px;
-    height: 100px;
+    align-items: center;
+    justify-content: center;
     background: white;
-    filter: drop-shadow(0 -6mm 4mm rgb(160, 0, 210));
+    filter: drop-shadow(0 0 0.75rem crimson);
 }
 
 body {
