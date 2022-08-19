@@ -4,10 +4,11 @@ class Tasks {
     constructor(task) {
         //edit your private variable to be equal to a value of null
         //Add your code below
+        this._task = task
     }
 
-    get task() {
-        return this._task
+    get getTask() {
+        return this._task;
     }
 
     //Create a "setter" with a parameter of text
@@ -15,12 +16,23 @@ class Tasks {
     //If the condition is true, set your private variable to be equal to the parameter given
     //if the condition is false, console log an error message in the form of a string e.g. console.log("This shouldn't be a number")
     //Add your code below
-
-
+    set setTask(text) {
+        if(isNaN(text)) {
+            console.log("not a number");
+            this._task = text;
+        }
+        else {
+            throw 'Enter a number';
+        }
+    }
 }
 //Edit the instatiation of your class to not include an argument
 //Add your code below
 
+let x = new Tasks("do da dishes");
+console.log(x.getTask);
+x.setTask = "don't do dishes";
+console.log(x.getTask);
 
 //Below you'll see there is a function which is decalared with a parameter name of "event"
 //Have a look at querySelectors to understand how to complete the instructions in the code below
