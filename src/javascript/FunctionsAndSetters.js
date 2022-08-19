@@ -28,25 +28,24 @@ class Tasks {
 }
 //Edit the instatiation of your class to not include an argument
 //Add your code below
+let x = new Tasks();
 
-let x = new Tasks("do da dishes");
-console.log(x.getTask);
-x.setTask = "don't do dishes";
-console.log(x.getTask);
 
 //Below you'll see there is a function which is decalared with a parameter name of "event"
 //Have a look at querySelectors to understand how to complete the instructions in the code below
 function newTask(event) {
     event.preventDefault()//This prevents your form from doing it's default behaviour, which is to submit the form
-
+    
     //Declare a variable called "value" and have it equal to the value of your input text, by targeting the "task" id created
     //Using the variable equal to your instatiated class, call the setter function and have it equal to the "value" variable above
     //Add your code below
-
+    let value = document.querySelector("#task").value;
+    x.setTask = value;
 
     //Using the empty paragraph element created above
     //The reason to why there was an id assigned to this p tag was so that we could target this p element
     //Target the id of the p element by using querySelector and change it's innerHTML to be equal to your object getter
     //Add your code below
-
+    let output = document.querySelector("#text");
+    output.innerHTML = x.getTask;
 }
