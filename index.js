@@ -2,8 +2,8 @@ const el = document.querySelector("#pageOne");
 const container = document.querySelector("#pageOne");
 
 el.addEventListener("mousemove", (e) => {
-  el.style.backgroundPositionX = -e.offsetX * 0.2 + "px";
-  el.style.backgroundPositionY = -e.offsetY * 0.2 + "px";
+  el.style.backgroundPositionX = -e.offsetX * 0.05 + "px";
+  el.style.backgroundPositionY = -e.offsetY * 0.05 + "px";
 });
 
 container.addEventListener("mouseenter", function() {
