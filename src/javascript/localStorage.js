@@ -19,3 +19,5 @@ let parsedData = JSON.parse(jsonData, (key, value) =>
 
 console.log(jsonData);
 console.log(parsedData);
+
+localStorage.setItem("jsonObject", JSON.stringify(parsedData));
