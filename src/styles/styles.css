@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    height: 200vh;
+    height: 300vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
 }
